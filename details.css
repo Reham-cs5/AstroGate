@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: url('img/background2.png') center/cover no-repeat fixed;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.overlay {
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.corner-logo {
+    position: fixed;
+    top: 30px;
+    left: 40px;
+    width: 90px;
+}
+
+.details-box {
+    width: 80%;
+    max-width: 1100px;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding: 50px;
+    border: 1px solid rgba(141, 114, 255, 0.4);
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 30px rgba(111, 75, 255, 0.35);
+}
+
+.planet-image img {
+    width: 330px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 45px rgba(111, 75, 255, 0.7);
+}
+
+.planet-info {
+    color: white;
+    max-width: 550px;
+}
+
+.planet-info h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 20px rgba(111, 75, 255, 0.8);
+}
+
+.planet-info p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #E5E7FF;
+}
+
+.planet-info ul {
+    padding-left: 20px;
+    line-height: 2;
+    color: #E5E7FF;
+}
+
+button {
+    margin-top: 20px;
+    margin-right: 15px;
+    padding: 13px 25px;
+    border: 1px solid #8D72FF;
+    border-radius: 30px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 20px rgba(111, 75, 255, 0.35);
+}
+
+button:hover {
+    background: rgba(111, 75, 255, 0.2);
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(111, 75, 255, 0.7);
+}
+
+.back-btn {
+    opacity: 0.8;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.7s ease-out;
+}

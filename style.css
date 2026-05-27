@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: url('img/background2.png') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color:  #F5F7FF;;
+}
+
+
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px 60px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.logo {
+    width: 240px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+
+#slogan {
+    font-size: 22px;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 2px;
+    color: #c9c8ce;
+    text-shadow: 0 0 15px rgba(111, 75, 255, 0.8);
+    margin-bottom: 15px;
+    opacity: 0;
+    animation: fadeIn 1s forwards 2s;
+}
+
+#enter-button {
+    padding: 12px 24px;
+    font-size: 18px;
+    border: 1px solid #8D72FF;
+    background: transparent;
+    box-shadow: 0 0 20px rgba(111, 75, 255, 0.5);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeIn 1s forwards 2s;
+    transition: 0.3s;
+}#enter-button:hover {
+    background: rgba(111, 75, 255, 0.2);
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(111, 75, 255, 0.8);
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.7s ease-out;
+}

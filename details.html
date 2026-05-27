@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Details | AstroGate</title>
+    <link rel="stylesheet" href="details.css">
+</head>
+
+<body>
+
+    <div class="overlay">
+
+        <img src="img/logo2.png" alt="AstroGate Logo" class="corner-logo">
+
+        <section class="details-box">
+
+            <div class="planet-image">
+                <img id="planet-img" src="" alt="Planet Image">
+            </div>
+
+            <div class="planet-info">
+                <h1 id="planet-name"></h1>
+                <p id="planet-description"></p>
+
+                <ul>
+                    <li><strong>Duration:</strong> <span id="planet-duration"></span></li>
+                    <li><strong>Price:</strong> <span id="planet-price"></span></li>
+                    <li><strong>Transportation:</strong> Space Shuttle</li>
+                    <li><strong>Activities:</strong> Planet exploration, space photography, cosmic camping</li>
+                </ul>
+
+                <button onclick="transitionTo('booking.html')">Book This Trip</button>
+                <button onclick="transitionTo('planets.html')" class="back-btn">Back to Planets</button>
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
